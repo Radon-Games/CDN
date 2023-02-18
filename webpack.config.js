@@ -4,7 +4,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: {
     unity: "./src/unity.ts",
-    flash: "./src/flash.ts"
+    flash: "./src/flash.ts",
+    html: "./src/html.ts"
   },
   output: {
     path: path.resolve(__dirname, "./dist"),

@@ -2,6 +2,8 @@ const urlParamaters = new URLSearchParams(window.location.search);
 
 const id = urlParamaters.get("id");
 
+declare var UnityLoader: any;
+
 if (id) {
   UnityLoader.instantiate("gameContainer", `/cdn/unity/${id}/build.json`, {
     onProgress: (gameInstance: any, progress: number) => {
