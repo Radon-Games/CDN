@@ -5,7 +5,8 @@ module.exports = {
   entry: {
     unity: "./src/unity.ts",
     flash: "./src/flash.ts",
-    html: "./src/html.ts"
+    html: "./src/html.ts",
+    emulator: "./src/emulator.ts"
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -35,7 +36,8 @@ module.exports = {
       patterns: [
         { from: "public" },
         { from: "node_modules/@ruffle-rs" },
-        { from: "cdn" }
+        { from: "cdn" },
+        { from: "EmulatorJS/data", to: "data" }
       ]
     })
   ]
