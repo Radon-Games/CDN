@@ -5,7 +5,7 @@ const id = urlParamaters.get("id");
 declare var UnityLoader: any;
 
 if (id) {
-  UnityLoader.instantiate("gameContainer", `/cdn/unity/${id}/build.json`, {
+  UnityLoader.instantiate("gameContainer", `/unity/${id}/build.json`, {
     onProgress: (gameInstance: any, progress: number) => {
       if (progress === 1) {
         document

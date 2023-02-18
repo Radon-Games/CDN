@@ -11,7 +11,6 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "[name].js"
   },
-  devtool: "source-map",
   module: {
     rules: [
       {
@@ -36,7 +35,7 @@ module.exports = {
       patterns: [
         { from: "public" },
         { from: "node_modules/@ruffle-rs" },
-        { from: "cdn", to: "cdn" }
+        { from: "cdn" }
       ]
     })
   ]
