@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npx tailwindcss -i ./src/style.css -o ./public/dist.css --watch\" \"webpack serve --mode=development\"",
-    "build": "npx tailwindcss -i ./src/style.css -o ./public/dist.css --minify && webpack --mode=production"
+    "dev": "concurrently \"npx tailwindcss -i ./src/style.css -o ./public/style.css --watch\" \"webpack serve --mode=development\"",
+    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css --minify && webpack --mode=production"
   },
   "repository": {
     "type": "git",
