@@ -3,7 +3,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
-    unity: "./src/unity/index.ts"
+    unity: "./src/unity.ts",
+    flash: "./src/flash.ts"
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -31,7 +32,11 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [{ from: "public" }]
+      patterns: [
+        { from: "public" },
+        { from: "node_modules/@ruffle-rs" },
+        { from: "cdn", to: "cdn" }
+      ]
     })
   ]
 };
