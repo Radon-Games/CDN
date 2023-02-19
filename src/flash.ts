@@ -4,7 +4,7 @@ const id = urlParamaters.get("id");
 
 declare var RufflePlayer: any;
 
-if (id) {
+if (id && RufflePlayer) {
   window.addEventListener("load", () => {
     const ruffle = RufflePlayer.newest();
     const player = ruffle.createPlayer();
