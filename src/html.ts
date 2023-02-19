@@ -4,7 +4,7 @@ const id = urlParamaters.get("id");
 
 if (id) {
   const iframe = document.createElement("iframe");
-  iframe.src = `html/${id}/index.html`;
+  iframe.src = `/cdn/html/${id}/index.html`;
   iframe.style.width = "100%";
   iframe.style.height = "100%";
   iframe.style.border = "none";

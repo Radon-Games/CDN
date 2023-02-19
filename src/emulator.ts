@@ -16,8 +16,8 @@ declare global {
 if (id && type && extension) {
   window.EJS_player = "#gameContainer";
   window.EJS_core = type;
-  window.EJS_gameUrl = `emulator/${id}.${extension}`;
-  window.EJS_pathtodata = "data/";
+  window.EJS_gameUrl = `/cdn/emulator/${id}.${extension}`;
+  window.EJS_pathtodata = "/cdn/data/";
 
   const script = document.createElement("script");
   script.src = "data/loader.js";

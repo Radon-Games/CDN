@@ -16,7 +16,7 @@ if (id) {
     const container = document.querySelector<HTMLDivElement>("#gameContainer");
     container?.appendChild(player);
     player
-      .load(`flash/${id}.swf`)
+      .load(`/cdn/flash/${id}.swf`)
       .then(() => {
         document
           .querySelector<HTMLDivElement>("#loader")!
