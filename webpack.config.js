@@ -36,7 +36,6 @@ module.exports = {
       patterns: [
         { from: "public" },
         { from: "node_modules/@ruffle-rs" },
-        { from: "cdn" },
         { from: "EmulatorJS/data", to: "data" }
       ]
     })
